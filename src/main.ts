@@ -11,10 +11,10 @@ let score = 0
 SetText("click to start!")
 
 
-var isJumping = false
+let isJumping = false
 let gameOver = true
 
-document.addEventListener('click', () => jump())
+document.addEventListener('mousedown', () => jump())
 
 
 setInterval(function () { Main()}, 10)
