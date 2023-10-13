@@ -40,6 +40,7 @@ function jump()
             isJumping = true
             dino?.classList.add("jump")
             setTimeout(RemoveJump, 500)
+            dino?.classList.remove("fall")
         }
     }
     else
@@ -52,7 +53,7 @@ function jump()
 
 function RemoveJump()
 {
-    dino?.classList.remove("jump")
+    dino?.classList.add("fall")
     isJumping = false;
     //mainLoop = mainLoop //bug fix?
 }
@@ -94,7 +95,7 @@ function CheckGameOver()
         }
 
         //detect bird collision
-        if(dinoTop <= 55 && birdleft < 11)
+        if(dinoTop <= 70 && birdleft < 11)
         {
             //end game
             console.log("player died!")

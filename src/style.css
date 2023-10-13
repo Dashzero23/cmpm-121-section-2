@@ -42,14 +42,32 @@
     top: 150px;
   }
 
-  35%
+  50%
+  {
+    top: 70px;
+  }
+  
+  100%
+  {
+    top: 50px;
+  }
+}
+
+.fall
+{
+  animation: fall .5s linear;
+}
+
+@keyframes fall
+{
+  0%
   {
     top: 50px;
   }
 
-  65%
+  50%
   {
-    top: 50px;
+    top: 70px;
   }
 
   100%
